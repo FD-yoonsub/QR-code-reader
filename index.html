@@ -63,10 +63,10 @@
     const rawId = params.get("id") || "";
 
     // 마지막 10자리만 사용
-    const last10 = rawId.slice(-10);
+    const last13 = rawId.slice(-13);
 
     document.getElementById("productId").textContent =
-      last10 || "(ID 없음)";
+      last13 || "(ID 없음)";
   </script>
 
 </body>
