@@ -62,11 +62,11 @@
     const params = new URLSearchParams(window.location.search);
     const rawId = params.get("id") || "";
 
-    // 마지막 10자리만 사용
-    const last13 = rawId.slice(-13);
+    // 마지막 15자리만 사용
+    const last15 = rawId.slice(-15);
 
     document.getElementById("productId").textContent =
-      last13 || "(ID 없음)";
+      last15 || "(ID 없음)";
   </script>
 
 </body>
